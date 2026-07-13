@@ -1,0 +1,8 @@
+//
+// Created by aavar on 7/13/2026.
+//
+
+#ifndef FORMA_RECTANGLESHAPE_H
+#define FORMA_RECTANGLESHAPE_H
+
+#endif //FORMA_RECTANGLESHAPE_H

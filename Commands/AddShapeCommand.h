@@ -1,0 +1,8 @@
+//
+// Created by aavar on 7/13/2026.
+//
+
+#ifndef FORMA_ADDSHAPECOMMAND_H
+#define FORMA_ADDSHAPECOMMAND_H
+
+#endif //FORMA_ADDSHAPECOMMAND_H
