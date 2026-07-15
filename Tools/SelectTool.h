@@ -1,8 +1,12 @@
-//
-// Created by aavar on 7/13/2026.
-//
+#pragma once
 
-#ifndef FORMA_SELECTTOOL_H
-#define FORMA_SELECTTOOL_H
+#include "Tool.h"
 
-#endif //FORMA_SELECTTOOL_H
+class SelectTool : public Tool {
+    public:
+        bool mousePressEvent(QGraphicsSceneMouseEvent *event, CanvasScene *scene) override;
+        bool mouseMoveEvent(QGraphicsSceneMouseEvent *event, CanvasScene *scene) override;
+        bool mouseReleaseEvent(QGraphicsSceneMouseEvent *event, CanvasScene *scene) override;
+
+        QString name() const override { return QStringLiteral("Select"); }
+};

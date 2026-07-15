@@ -1,8 +1,15 @@
-//
-// Created by aavar on 7/13/2026.
-//
+#pragma once
 
-#ifndef FORMA_CANVASVIEW_H
-#define FORMA_CANVASVIEW_H
+#include <QGraphicsView>
 
-#endif //FORMA_CANVASVIEW_H
+class CanvasView : public QGraphicsView {
+    Q_OBJECT
+    public:
+        explicit CanvasView(QGraphicsScene* scene, QWidget* parent = nullptr);
+
+    private:
+        qreal m_zoom{1.0};
+
+    protected:
+        void wheelEvent(QWheelEvent* event) override;
+};

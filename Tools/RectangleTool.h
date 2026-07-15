@@ -1,8 +1,17 @@
-//
-// Created by aavar on 7/13/2026.
-//
+#pragma once
 
-#ifndef FORMA_RECTANGLETOOL_H
-#define FORMA_RECTANGLETOOL_H
+#include "Tool.h"
+#include <QPointF>
 
-#endif //FORMA_RECTANGLETOOL_H
+class rectangleShape;
+
+class RectangleTool : public Tool {
+    public:
+        bool mousePressEvent(QGraphicsSceneMouseEvent *event, CanvasScene *scene) override;
+        bool mouseMoveEvent(QGraphicsSceneMouseEvent *event, CanvasScene *scene) override;
+        bool mouseReleaseEvent(QGraphicsSceneMouseEvent *event, CanvasScene *scene) override;
+
+        QString name() const override { return QStringLiteral("Rectangle"); }
+
+    private:
+};

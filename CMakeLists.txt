@@ -34,7 +34,8 @@ add_executable(Forma main.cpp
         Tools/RectangleTool.cpp
         Tools/RectangleTool.h
         Tools/EllipseTool.cpp
-        Tools/EllipseTool.h)
+        Tools/EllipseTool.h
+)
 target_link_libraries(Forma
         Qt::Core
         Qt::Gui
